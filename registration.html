@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,6 +7,46 @@
 </head>
 
 <body>
+  <form action="https://tests.fomenko.top/echo/index.php" method="post">
+    <!-- верхнее поле -->
+    <fieldset>
+      <legend>Поле регистрации</legend>
+      <!-- Логин -->
+      <div>
+        <label for="log">Логин</label>
+        <input id="log" type="email" name="log" placeholder="введите логин" required>
+      </div>
+      <!-- Пароль -->
+      <div>
+        <label for="psw">Пароль</label>
+        <input id="psw" type="password" name="psw" placeholder="введите пароль" required minlength="5" maxlength="15">
+      </div>
+      <!-- подтверждение пароля -->
+      <div>
+        <label for="ppsw">Подтвердите пароль</label>
+        <input id="ppsw" type="password" name="ppsw" placeholder="подтвердите пароль" required minlength="5"
+          maxlength="15">
+      </div>
+      <div>
+        <label for="age">Возраст</label>
+        <input id="age" type="number" name="age" placeholder="ваш возраст" required min="1" max="100">
+      </div>
+    </fieldset>
+
+    <!-- кнопки -->
+    <fieldset>
+      <legend>Действия</legend>
+      <div>
+        <button type="submit">Регистрация</button>
+        <button type="reset">Сброс</button>
+      </div>
+    </fieldset>
+
+    <div>
+      <a href="index.html">назад к главному меню</a>
+    </div>
+
+  </form>
 
 </body>
 

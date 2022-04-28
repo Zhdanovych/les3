@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,6 +7,140 @@
 </head>
 
 <body>
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+    <fieldset>
+      <legend>Введите данные</legend>
+      <!-- тип кузова -->
+      <div>
+        <label for="tbody">Тип кузова</label>
+        <select id="tbody" name="tbody">
+          <option value="BodyType1" selected disabled>Тип кузова</option>
+          <option value="BodyType2">Седан</option>
+          <option value="BodyType3">Хетчбэк</option>
+          <option value="BodyType4">Пикап</option>
+          <option value="BodyType5">Универсал</option>
+          <option value="BodyType6">Купе</option>
+          <option value="BodyType7">Кабриолет</option>
+        </select>
+      </div>
+      <!-- Марка авто -->
+      <div>
+        <label for="mark">Марка авто</label>
+        <select id="mark" name="mark">
+          <option value="" selected disabled>Выберите марку</option>
+          <option value="Mark1">Mercedes-Benz</option>
+          <option value="Mark2">Fiat</option>
+          <option value="Mark3">Kia</option>
+          <option value="Mark4">Dodge</option>
+          <option value="Mark5">Mitsubishi</option>
+        </select>
+      </div>
+      <!-- страна происхождения -->
+      <div>
+        <label for="country">Страна производитель</label>
+        <select id="country" name="country">
+          <option value="" selected disabled>Выберите страну</option>
+          <option value="Country1">Германия</option>
+          <option value="Country2">Корея</option>
+          <option value="Country3">Америка</option>
+          <option value="Country4">Япония</option>
+          <option value="Country5">Италия</option>
+
+        </select>
+      </div>
+      <!-- цена -->
+      <div>
+        <label for="pricef">Цена</label>
+        <input id="pricef" name="pricef" type="number" min="1" placeholder="от">
+        <input name="pricet" type="number" min="2" placeholder="до">
+      </div>
+      <!-- год выпуска -->
+      <div>
+        <label for="yearf">Год выпуска</label>
+        <select name="yearf" id="yearf">
+          <option value="" disabled selected>от</option>
+          <option value="yearf1">2015</option>
+          <option value="yearf2">2016</option>
+          <option value="yearf3">2017</option>
+          <option value="yearf4">2018</option>
+          <option value="yearf5">2019</option>
+        </select>
+        <select name="yearto" id="yearto">
+          <option value="" selected disabled>до</option>
+          <option value="yearto1">2016</option>
+          <option value="yearto2">2017</option>
+          <option value="yearto3">2018</option>
+          <option value="yearto4">2019</option>
+          <option value="yearto5">2020</option>
+        </select>
+      </div>
+      <!-- состояние -->
+      <div>
+        <label for="condition">Состояние</label>
+        <select id="condition" name="condition" multiple>
+          <option value="" selected disabled>выберите состояние</option>
+          <option value="condition1">новый</option>
+          <option value="condition2">б/у</option>
+          <option value="condition3">в кредите</option>
+          <option value="condition4">нерастаможенный</option>
+          <option value="condition5">пригнан из США</option>
+        </select>
+      </div>
+      <!-- топливо -->
+      <div>
+        <label for="fuel">Тип топлива</label>
+        <select id="fuel" name="fuel">
+          <option value="" selected disabled>тип топлива</option>
+          <option value="fuel1">Бензин</option>
+          <option value="fuel2">Дизель</option>
+          <option value="fuel3">Гибрид</option>
+          <option value="fuel4">Газ</option>
+          <option value="fuel5">Электро</option>
+        </select>
+      </div>
+      <!-- коробка предач -->
+      <div>
+        <label for="trans">Тип коробки передач</label>
+        <select id="trans" name="trans">
+          <option value="" selected disabled>тип коробки предач</option>
+          <option value="trans1">Ручная</option>
+          <option value="trans2">Автоматическа</option>
+          <option value="trans3">DSG</option>
+        </select>
+      </div>
+      <!-- Цвет -->
+      <div>
+        <label for="col">Цвет</label>
+        <select id="col" name="col">
+          <option value="" selected disabled>Выберите цвет</option>
+          <option value="col1">Белый</option>
+          <option value="col2">Черный</option>
+          <option value="col3">Синий</option>
+          <option value="col4">Красный</option>
+          <option value="col5">Серый</option>
+        </select>
+      </div>
+      <!-- комфорт -->
+      <div>
+        <label for="comf">Комфорт</label>
+        <select id="comf" name="comf" multiple>
+          <option value="" selected disabled>Выберите функции</option>
+          <option value="comf1">Кожаный салон </option>
+          <option value="comf2">Подогрев руля</option>
+          <option value="comf3">Подогрев сидений</option>
+          <option value="comf4">Люк</option>
+        </select>
+      </div>
+      <!-- кнопка -->
+      <div>
+        <button type="submit">Поиск</button>
+      </div>
+    </fieldset>
+    <div>
+      <a href="index.html">назад к главному меню</a>
+    </div>
+
+  </form>
 
 </body>
 
